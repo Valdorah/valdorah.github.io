@@ -46,7 +46,7 @@ nav > ul > li{
     border-right: 1px solid #111;
 }
 
-li a{
+nav > ul > li a{
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
@@ -54,7 +54,7 @@ li a{
     padding: 14px 16px;
 }
 
-li a:hover{
+nav > ul > li a:hover{
     background-color: #111;
 }
 
