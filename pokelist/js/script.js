@@ -19,7 +19,7 @@ function fillPage(url){
             imgElt.setAttribute('src', details.sprites.front_default);
             
             details.types.forEach(index => {
-                var type = document.createElement('p');
+                var type = document.createElement('span');
 
                 type.setAttribute('class', index.type.name);
                 type.textContent = index.type.name;
@@ -42,6 +42,8 @@ function fillPage(url){
         pokeName.textContent = pokemon.name;
 
         imgElt.style.cssFloat = 'left';
+
+        types.setAttribute('class', 'types');
 
         pokeDiv.appendChild(pokeName);
         pokeDiv.appendChild(imgElt);
