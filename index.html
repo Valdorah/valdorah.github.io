@@ -3,112 +3,200 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Alexis Gonçalves - ePortfolio</title>
 </head>
 
 <body>
     <header>
-        <nav class="translucide">
-            <ul>
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#realisation">Réalisations</a></li>
-            </ul>
+        <nav>
+            <div class="nav-wrapper lime darken-4">
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="hide-on-med-and-down">
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#realisation">Réalisations</a></li>
+                    <li class="right"><a href="mailto:alexisgoncalves1811@gmail.com"><i
+                                class="material-icons left">mail</i>alexisgoncalves1811@gmail.com</a></li>
+                    <li class="right"><a href="https://github.com/Valdorah/" target="_blank"><i
+                                class="material-icons left">open_in_new</i>Github</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section id="profil">
-        <article>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="images/min_book.jpg">
+                </div>
+                <img class="circle" src="">
+                <span class="white-text name">Alexis Gonçalves</span>
+                <a href="mailto:alexisgoncalves1811@gmail.com"><span
+                        class="white-text email">alexisgoncalves1811@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="https://github.com/Valdorah/" target="_blank"><i
+                    class="material-icons left">open_in_new</i>Github</a></li>
+        <li><a href="files/goncalves_alexis_cv.pdf" target="_blank"><i class="material-icons left">open_in_new</i>Mon
+                CV</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#realisation">Réalisations</a></li>
+    </ul>
+
+    <main>
+        <div class="parallax-container hide-on-med-and-down">
+            <div class="parallax"><img src="images/book.jpg"></div>
+        </div>
+
+        <section class="container" id="profil">
             <h2>Présentation</h2>
-            <p>Bonjour,</p>
-            <br />
-            <p>Je m'appelle Alexis Gonçalves. Je suis actuellement en licence professionnelle : développement
-                d'application intranet/internet à l'IUT de Clermont-Ferrand.</p>
-            <p>Je travaille également en alternance dans le service informatique au sein de l'URSSAF Auvergne.</p>
-            <p>Mon objectif est de travailler, après ma licence, dans une entreprise de développement web.</p>
-            <br />
-            <p>
-                <a href="mailto:alexisgoncalves1811@gmail.com"><button class="btn">Me contacter</button></a>
-                <a href="./cv.html"><button class="btn">Mon CV</button></a>
-            </p>
-        </article>
-    </section>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <p class="flow-text">Bonjour, je m'appelle Alexis Gonçalves. Je suis actuellement en licence
+                        professionnelle
+                        : développement
+                        d'application intranet/internet à l'IUT de Clermont-Ferrand.
+                        Je travaille également en alternance dans le service informatique de l'URSSAF Auvergne.
+                        Mon objectif est de travailler, après ma licence, dans une entreprise de développement web dans
+                        laquelle
+                        je pourrais apporter mon expérience acquise lors de mon parcours universitaire, mais également
+                        enrichir
+                        mes compétences.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="competences">
-        <article>
-            <h2>Compétences</h2>
-            <ul>
-                <li>
-                    <div>
-                        <h3>Utilisation des langages : HTML, CSS et PHP</h3>
-                        <p>
-                            Dans le cadre de mes études en DUT Informatique, j'ai eu à réaliser une petite application
-                            PHP qui parse des flux RSS afin de récupérer des news. Ces dernières sont ensuite affichées
-                            sur une page web.
-                        </p>
-                        <a href="https://github.com/Valdorah/parserRSS" target="_blank"><button class="btn">Voir le
-                                dépot github</button></a>
-                    </div>
-                </li>
+        <section class="container" id="competences">
+            <h2>Mes principales compétences</h2>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">HTML & CSS</h4>
+                    <p class="flow-text">C'est avec ces deux langages qu'a débuté mon intérêt pour l'informatique. J'ai
+                        commencé à les étudier, en autodidacte, lorsque j'étais en première STI2D en réalisant des
+                        petits sites web statiques.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">JS</h4>
+                    <p class="flow-text">Durant mon parcours universitaire, j'ai également appris à me servir du langage
+                        JavaScript. Ce langage m'a tout de suite plus, car je le trouve intuitif.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">PHP</h4>
+                    <p class="flow-text">Le PHP est le premier langage qui m'a fait découvrir le développement sur
+                        serveur. J'ai
+                        réalisé un <a href="https://github.com/Valdorah/parserRSS" target="_blank"
+                            class="lime-text text-darken-4 bold">parser de news</a> lors de ma deuxième année
+                        de DUT. Ce projet m'a beaucoup plu.</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Détermination</h4>
+                    <p class="flow-text">Dès le début de mon DUT, j'ai rencontré des difficultés de compréhension. Je
+                        n'ai cependant pas abandonné et ai participé à des tutorats (des
+                        services qui permettent aux étudiants de première année de se faire aider par des étudiants de
+                        deuxième année et de licence)
+                        durant cette période. Grâce aux différentes aides que j'ai eues, j'ai pu surmonter mes
+                        obstacles.
+                    </p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Autodidacte</h4>
+                    <p class="flow-text">
+                        Pour minimiser les difficultés rencontrées durant mon parcours universitaires, j'ai pris
+                        l'initiative de me renseigner à l'avance sur les matières que je verrais. Par la suite, j'ai
+                        suivi quelques cours sur <a class="lime-text text-darken-4 bold"
+                            href="https://openclassrooms.com/fr/" target="_blank">openclassrooms.com</a> afin d'avoir un
+                        aperçut général des différents
+                        langages que je verrai.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                <li>
-                    <div>
-                        <h3>Determination</h3>
-                        <p>J'ai obtenu mon diplôme bac +2 malgrès les difficultés de compréhension rencontrées au début
-                            de mes études. Je n'ai pas baisser les bras et me suis servit de l'aide disponible (tutorat,
-                            professeur) afin de combler mes lacunes et d'aller de l'avant.</p>
-                        <a href="#" target="_blank"><button class="btn">Voir mon diplôme</button></a>
-                    </div>
-                </li>
-            </ul>
-        </article>
-    </section>
-
-    <section id="formation">
-        <article>
+        <section class="container" id="formation">
             <h2>Formation</h2>
-            <ul>
-                <li>
-                    <h3>Actuellement :</h3>
-                    <p>
-                        Etudiant en licence professionnelle : Dévelloppement d'application intranet/internet à l'IUT de
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Actuellement</h4>
+                    <p class="flow-text">
+                        Étudiant en licence professionnelle : développement d'application intranet/internet à l'IUT de
                         Clermont-Ferrand et alternant chez URSSAF Auvergne.
                     </p>
-                </li>
-                <li>
-                    <h3>2017 - 2019 :</h3>
-                    <p>Etudiant en DUT Informatique à l'IUT de Clermont-Ferrand.</p>
-                </li>
-                <li>
-                    <h3>2015 - 2017 :</h3>
-                    <p>Baccalauréat Technologique STI2D au lycée Pierre-Joël Bonté à Riom.</p>
-                </li>
-            </ul>
-        </article>
-    </section>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">2017 - 2019</h4>
+                    <p class="flow-text">Étudiant en DUT Informatique à l'IUT de Clermont-Ferrand.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">2015 - 2017</h4>
+                    <p class="flow-text">Baccalauréat Technologique STI2D au lycée Pierre-Joël Bonté à Riom.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="realisation">
-        <article>
+        <section class="container" id="realisation">
             <h2>Réalisation</h2>
-            <ul>
-                <li>
-                    <h3>Découverte HTML</h3>
-                    <p>Le premier site web que j'ai réalisé m'a surtout servi à acquérir les bases de l'HTML et du CSS.
-                        Il est composé
-                        d'un tableau qui reprend quelque pokemon avec diverses caractéristiques.</p>
-                    <a href="./pokemon/pokemon.html" target="_blank"><button class="btn">Voir la page</button></a>
-                </li>
-                <li>
-                    <h3>Utilisation d'une API pour faire une liste de pokémon</h3>
-                    <p>Pour apprendre à me servir d'une API et de JavaScript, j'ai réaliser un script qui réalise des
-                        requêtes à une API pokemon et affiche ces derniers dans une liste.</p>
-                    <a href="./pokelist/html/index.html" target="_blank"><button class="btn">Voir la page</button></a>
-                </li>
-            </ul>
-        </article>
-    </section>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Découverte HTML</h4>
+                    <p class="flow-text">Le <a class="lime-text text-darken-4 bold" href="./pokemon/pokemon.html"
+                            target="_blank">premier site web</a> que j'ai réalisé (durant mon baccalauréat STI2D) m'a
+                        surtout servi à acquérir les bases
+                        de l'HTML et du CSS. Il est composé
+                        d'un tableau qui reprend quelques pokémons avec diverses caractéristiques.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Utilisation d'une API pour faire une liste de pokémon</h4>
+                    <p class="flow-text">Pour apprendre à me servir d'une API et de JavaScript, j'ai réalisé un script
+                        qui réalise des requêtes à une API pokémons et affiche ces derniers sur une <a
+                            class="lime-text text-darken-4 bold" href="./pokelist/html/index.html" target="_blank">page
+                            web</a>.</p>
+                </div>
+                <div class="col s12 m12 l12">
+                    <h4 class="lime-text text-darken-4">Réalisation d'une PWA (Progressive Web App)</h4>
+                    <p class="flow-text">
+                        Ce qui m'a dernièrement intéressé est les PWA, des sites web qui peuvent s'installer à l'aide
+                        d'un navigateur récent. J'ai pour cela suivi un tutoriel d'une <a
+                            class="lime-text text-darken-4 bold"
+                            href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7"
+                            target="_blank">chaîne YouTube</a>. Grâce à ce
+                        tutoriel, j'ai réalisé une <a class="lime-text text-darken-4 bold"
+                            href="https://valdorah-sharebook.firebaseapp.com/" target="_blank">simple PWA</a> qui permet
+                        d'ajouter et de supprimer des livres. Ces
+                        derniers sont stockés sur le service proposé par Google : <a
+                            class="lime-text text-darken-4 bold" href="https://firebase.google.com/"
+                            target="_blank">Firestore</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="cv" class="hide-on-med-and-down">
+            <h2 class="row hide-on-med-and-down">Mon CV</h2>
+
+            <div class="row hide-on-med-and-down">
+                <iframe class="col l12" height="600px" src="files/goncalves_alexis_cv.pdf" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/ui.js"></script>
 </body>
 
 </html>
