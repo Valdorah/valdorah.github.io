@@ -1,0 +1,11 @@
+.card-image > img {
+    max-height: 400px;
+}
+
+.card {
+    min-height: 500px;
+}
+
+.bold {
+    font-weight: bold;
+}
