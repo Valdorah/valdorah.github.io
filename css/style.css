@@ -9,3 +9,12 @@
 .bold {
     font-weight: bold;
 }
+
+blockquote{
+    background-color: rgb(158,157,36, 0.5);
+    border-color: #9e9d24;
+}
+
+p{
+    text-align: justify;
+}
