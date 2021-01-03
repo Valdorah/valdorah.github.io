@@ -18,3 +18,7 @@ blockquote{
 p{
     text-align: justify;
 }
+
+iframe {
+    border: none;
+}
