@@ -1,22 +1,15 @@
 {
-  "name": "valdorah.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Valdorah/valdorah.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Valdorah/valdorah.github.io/issues"
-  },
-  "homepage": "https://github.com/Valdorah/valdorah.github.io#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
+  "dependencies": {
+    "astro": "^4.8.3"
   }
 }

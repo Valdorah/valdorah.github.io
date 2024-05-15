@@ -1,9 +1,0 @@
-version: "3.8"
-
-services:
-  web:
-    image: nginx:stable-alpine3.17-slim
-    ports:
-      - "8080:80"
-    volumes:
-      - .:/usr/share/nginx/html
