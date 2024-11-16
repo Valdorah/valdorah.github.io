@@ -1,4 +1,4 @@
-@tailwind base;
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
 
@@ -70,7 +70,32 @@
     * {
       @apply border-border;
     }
+
     body {
-      @apply bg-background text-foreground;
+      @apply bg-background text-foreground h-full flex flex-col p-1;
+    }
+
+    main {
+      @apply flex-1 my-12;
+
+      section {
+        @apply my-6;
+      }
+    }
+
+    h1 {
+      @apply text-3xl font-bold;
+    }
+
+    h2 {
+      @apply text-2xl;
+    }
+
+    h3 {
+      @apply text-xl;
+    }
+
+    h4, h5 {
+      @apply text-lg;
     }
   }

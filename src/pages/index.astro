@@ -1,17 +1,101 @@
 ---
 import "@/styles/globals.css";
-import { Button } from "@/components/ui/button";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en" class="w-full h-full">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="h-full flex justify-center items-center">
-		<h1>Page en construction</h1>
-	</body>
-</html>
+<BaseLayout>
+    <section>
+        <h4>Présentation</h4>
+		<p>
+			Bonjour, je m'appelle Alexis Gonçalves. Je viens de terminer mon année en
+			licence professionnelle (développement web) que j'ai réalisé sous contrat de
+			professionnalisation. J'ai rejoint, pour mon alternance, le service informatique de l'URSSAF
+			Auvergne. Aujourd’hui, je suis à la recherche d’un emploi dans le développement web qui me
+			permettra de m’intégrer dans le monde professionnel et où je pourrais apporter mon expérience
+			acquise lors de mon parcours universitaire, mais également
+			enrichir
+			mes compétences.
+		</p>
+    </section>
+
+    <section>
+        <h4>Mes principales compétences</h4>
+        <article>
+            <div>
+                <h5>HTML & CSS</h5>
+                <p>C'est avec ces deux langages qu'a débuté mon intérêt pour l'informatique. J'ai
+                    commencé à les étudier, en autodidacte, lorsque j'étais en première STI2D en réalisant des
+                    petits sites web statiques.</p>
+            </div>
+            <div>
+                <h5>JS</h5>
+                <p>Durant mon parcours universitaire, j'ai également appris à me servir du langage
+                    JavaScript. Ce langage m'a tout de suite plus, car je le trouve intuitif.</p>
+            </div>
+            <div>
+                <h5>PHP</h5>
+                <p>Le PHP est le premier langage qui m'a fait découvrir le développement sur
+                    serveur. J'ai
+                    réalisé un <a href="https://github.com/Valdorah/parserRSS" target="_blank"
+                                  class="lime-text text-darken-4 bold">parser de news</a> lors de ma deuxième année
+                    de DUT. Ce projet m'a beaucoup plu.</p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <div>
+                <h4>Détermination</h4>
+                <p>Dès le début de mon DUT, j'ai rencontré des difficultés de compréhension. Je
+                    n'ai cependant pas abandonné et ai participé à des tutorats (des
+                    services qui permettent aux étudiants de première année de se faire aider par des étudiants de
+                    deuxième année et de licence)
+                    durant cette période. Grâce aux différentes aides que j'ai eues, j'ai pu surmonter mes
+                    obstacles.
+                </p>
+            </div>
+            <div>
+                <h4>Autodidacte</h4>
+                <p>
+                    Pour minimiser les difficultés rencontrées durant mon parcours universitaires, j'ai pris
+                    l'initiative de me renseigner à l'avance sur les matières que je verrais. Par la suite, j'ai
+                    suivi quelques cours sur <a class="lime-text text-darken-4 bold"
+                                                href="https://openclassrooms.com/fr/" target="_blank">openclassrooms.com</a> afin d'avoir un
+                    aperçut général des différents
+                    langages que je verrai.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h4>Formation</h4>
+        <article>
+            <div>
+                <h5>Actuellement</h5>
+                <p>
+                    Étudiant en licence professionnelle : développement d'application intranet/internet à l'IUT de
+                    Clermont-Ferrand et alternant chez URSSAF Auvergne.
+                </p>
+            </div>
+            <div>
+                <h5>2017 - 2019</h5>
+                <p>Étudiant en DUT Informatique à l'IUT de Clermont-Ferrand.</p>
+            </div>
+            <div>
+                <h5>2015 - 2017</h5>
+                <p>Baccalauréat Technologique STI2D au lycée Pierre-Joël Bonté à Riom.</p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h4>Mon CV</h4>
+        <article>
+            <p>
+                <a href="/files/goncalves_alexis_cv.pdf" target="_blank">Télécharger mon CV</a>
+            </p>
+        </article>
+    </section>
+</BaseLayout>
