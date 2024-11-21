@@ -13,10 +13,10 @@
       --popover: 0 0% 100%;
       --popover-foreground: 224 71.4% 4.1%;
 
-      --primary: 220.9 39.3% 11%;
+      --primary: 117.27, 9.73%, 44.31%;
       --primary-foreground: 210 20% 98%;
 
-      --secondary: 220 14.3% 95.9%;
+      --secondary: 107.14, 19.44%, 85.88%;
       --secondary-foreground: 220.9 39.3% 11%;
 
       --muted: 220 14.3% 95.9%;
@@ -76,7 +76,7 @@
     }
 
     main {
-      @apply flex-1 my-12;
+      @apply flex-1;
 
       section {
         @apply my-6;
@@ -84,7 +84,7 @@
     }
 
     h1 {
-      @apply text-3xl font-bold;
+      @apply text-primary text-3xl font-bold;
     }
 
     h2 {
@@ -95,7 +95,15 @@
       @apply text-xl;
     }
 
-    h4, h5 {
-      @apply text-lg;
+    h4 {
+      @apply text-primary text-lg font-bold underline;
+    }
+
+    h5 {
+      @apply text-primary
+    }
+
+    button:hover {
+      @apply bg-primary;
     }
   }

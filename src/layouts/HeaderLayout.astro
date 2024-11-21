@@ -1,9 +1,27 @@
 ---
 import '@/styles/components/header.css';
+import {Button} from "../components/ui/button";
 ---
 
 <header>
-    <h1>Alexis Gonçalves</h1>
-    <h2>Développeur web Full Stack</h2>
-    <h3>Clermont-Ferrand, Puy-de-Dôme</h3>
+    <div class="personnal-infos">
+        <h1>Alexis Gonçalves</h1>
+        <h2>Développeur web Full Stack</h2>
+        <h3>Clermont-Ferrand, Puy-de-Dôme</h3>
+    </div>
+
+    <ul>
+        <li>Persévérance</li>
+        <li>Adaptabilité</li>
+        <li>Organisation</li>
+    </ul>
+
+
+    <div class="download">
+        <a href="/files/goncalves_alexis_cv.pdf" target="_blank">
+            <Button className="download-btn">
+                Télécharger mon CV
+            </Button>
+        </a>
+    </div>
 </header>

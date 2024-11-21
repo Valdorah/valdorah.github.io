@@ -1,0 +1,17 @@
+.personnal-infos {
+    @apply flex flex-col gap-2;
+}
+
+.download {
+    .download-btn {
+        @apply w-full my-4;
+    }
+}
+
+ul {
+    @apply flex flex-col items-center gap-2 my-4;
+
+    li {
+        @apply text-primary font-bold uppercase;
+    }
+}
