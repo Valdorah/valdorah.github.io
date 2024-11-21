@@ -1,9 +1,17 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: [
+          'Nunito',
+          ...defaultTheme.fontFamily.sans
+      ]
+    },
     container: {
       center: true,
       padding: "2rem",

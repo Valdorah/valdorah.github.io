@@ -67,6 +67,14 @@
   }
 
   @layer base {
+    @font-face {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/Nunito-VariableFont_wght.ttf) format('truetype');
+    }
+
     * {
       @apply border-border;
     }
