@@ -8,6 +8,14 @@
     }
 }
 
+.period {
+    @apply italic;
+}
+
+.space {
+    @apply flex flex-col gap-4;
+}
+
 ul {
     @apply flex flex-col items-center gap-2 my-4;
 

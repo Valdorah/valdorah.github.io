@@ -13,10 +13,10 @@
       --popover: 0 0% 100%;
       --popover-foreground: 224 71.4% 4.1%;
 
-      --primary: 117.27, 9.73%, 44.31%;
+      --primary: 161.38, 93.55%, 30.39%;
       --primary-foreground: 210 20% 98%;
 
-      --secondary: 107.14, 19.44%, 85.88%;
+      --secondary: 160.12, 84.08%, 39.41%;
       --secondary-foreground: 220.9 39.3% 11%;
 
       --muted: 220 14.3% 95.9%;
@@ -80,7 +80,7 @@
     }
 
     body {
-      @apply bg-background text-foreground h-full flex flex-col p-1;
+      @apply bg-background text-foreground h-full flex flex-col p-2;
     }
 
     main {
@@ -88,6 +88,10 @@
 
       section {
         @apply my-6;
+      }
+
+      p {
+        @apply text-justify;
       }
     }
 
@@ -113,5 +117,9 @@
 
     button:hover {
       @apply bg-primary;
+    }
+
+    button {
+      @apply uppercase;
     }
   }
