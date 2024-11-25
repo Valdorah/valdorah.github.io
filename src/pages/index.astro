@@ -1,7 +1,16 @@
 ---
 import "@/styles/globals.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import SimpleCard from "@/components/SimpleCard.astro";
 import { Button } from "@/components/ui/button";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
 ---
 
 <BaseLayout>
@@ -19,32 +28,46 @@ import { Button } from "@/components/ui/button";
 
     <section>
         <h4>Technologies</h4>
+        <p>
+            Au cours de mon apprentissage et de mon parcours professionnel, j'ai pu acquérir des compétences utiles à
+            mon métier.
+        </p>
+        <p>
+            Celles que j'ai le mieux acquises sont les suivantes :
+        </p>
         <article class="space">
-            <div>
-                <h5>Symfony</h5>
-                <img src="/images/logos/symfony_light.svg" alt="symfony_logo" />
-                <p>Texte</p>
-            </div>
-            <div>
-                <h5>Laravel</h5>
-                <p>Texte</p>
-            </div>
-            <div>
-                <h5>Angular</h5>
-                <p>Texte</p>
-            </div>
-            <div>
-                <h5>MySQL</h5>
-                <p>Texte</p>
-            </div>
-            <div>
-                <h5>Docker</h5>
-                <p>Texte</p>
-            </div>
-            <div>
-                <h5>Git</h5>
-                <p>Texte</p>
-            </div>
+            <SimpleCard title="Symfony">
+                <div class="card-image">
+                    <div>
+                        <img src="/images/logos/symfony.svg" alt="symfony_logo" />
+                    </div>
+                </div>
+            </SimpleCard>
+            <SimpleCard title="Laravel">
+                <div class="card-image">
+                    <img src="/images/logos/laravel.svg" alt="laravel_logo" />
+                </div>
+            </SimpleCard>
+            <SimpleCard title="Angular">
+                <div class="card-image">
+                    <img src="/images/logos/angular.svg" alt="angular_logo" />
+                </div>
+            </SimpleCard>
+            <SimpleCard title="MySQL">
+                <div class="card-image">
+                    <img src="/images/logos/mysql.png" alt="mysql_logo" />
+                </div>
+            </SimpleCard>
+            <SimpleCard title="Docker">
+                <div class="card-image">
+                    <img src="/images/logos/docker.svg" alt="docker_logo" />
+                </div>
+            </SimpleCard>
+            <SimpleCard title="Git">
+                <div class="card-image">
+                    <img src="/images/logos/git.svg" alt="git_logo" />
+                </div>
+            </SimpleCard>
         </article>
     </section>
 

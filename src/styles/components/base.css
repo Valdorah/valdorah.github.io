@@ -1,0 +1,13 @@
+main {
+    section {
+        @apply min-h-screen;
+    }
+
+    .period {
+        @apply italic;
+    }
+
+    .space {
+        @apply flex flex-col gap-4 my-8;
+    }
+}
