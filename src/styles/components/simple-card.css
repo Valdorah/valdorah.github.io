@@ -5,6 +5,11 @@
 
     .card-content {
         .card-image {
+            @apply h-40 flex justify-center;
+
+            img {
+                @apply h-full;
+            }
         }
     }
 }
