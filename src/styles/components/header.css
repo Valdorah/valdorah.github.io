@@ -1,21 +1,9 @@
 header {
-    @apply h-screen flex flex-col justify-center;
+    nav {
+        @apply flex justify-end gap-2 pe-4 pt-4;
 
-    > div {
-        @apply my-4;
-    }
-
-    .profil-photo {
-        @apply flex justify-center;
-    }
-
-    .personnal-infos {
-        @apply flex flex-col gap-2;
-    }
-
-    .download {
-        .download-btn {
-            @apply w-full;
+        a {
+            @apply cursor-pointer;
         }
     }
 }

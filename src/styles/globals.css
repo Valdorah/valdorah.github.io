@@ -80,7 +80,7 @@
     }
 
     body {
-      @apply bg-background text-foreground p-4;
+      @apply bg-background text-foreground;
     }
 
     h1 {
